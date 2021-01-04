@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Open Weather Api</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<div class="search">
+					<div class="form-wrapper">
+						<input type="text" name="search" id="search" />
+						<button class="button" id="search-button">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<p class="error"></p>
+				<div class="output">
+					<div class="image">
+						<img
+							src="http://openweathermap.org/img/wn/10d@4x.png"
+							alt="weather icon"
+							id="image"
+						/>
+					</div>
+					<div class="text">
+						<p class="name">name</p>
+						<p class="weather">Weather</p>
+						<p class="description">Description</p>
+						<p class="temperature">Temperature</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>

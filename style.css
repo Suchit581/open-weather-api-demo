@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: sans-serif;
+	font-weight: 16px;
+	line-height: 1.4;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: grid;
+	place-items: center;
+}
+
+.error {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: rgb(219, 24, 24);
+}
+main {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	background: linear-gradient(45deg, #1919c9, #5207cc);
+}
+
+main .wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-width: 50vh;
+	height: 80vh;
+	background: rgba(255, 255, 255, 0.5);
+	/* padding: 1rem; */
+	border-radius: 1rem;
+	backdrop-filter: blur(2px);
+	overflow: hidden;
+}
+
+main .wrapper .search,
+.output {
+	height: 50%;
+}
+
+main .wrapper .search {
+	height: auto;
+}
+
+main .wrapper .output {
+	height: 100%;
+}
+
+.search,
+.output {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.search {
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+}
+.search .form-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background: #ddd;
+	padding: 1.5rem 0.25rem;
+	transition: all 200ms linear;
+}
+
+.search .form-wrapper input,
+button {
+	outline: none;
+	border: none;
+	background: transparent;
+	font-size: 1.4rem;
+}
+.search .form-wrapper input {
+	width: 80%;
+	padding: 0 1rem;
+}
+.search .form-wrapper button {
+	width: 20%;
+}
+
+.form-wrapper:hover,
+.form-wrapper:focus-within,
+.form-wrapper:active {
+	background: #eee;
+}
+
+.search .form-wrapper input:focus-within ~ .form-wrapper {
+	background: #eee;
+}
+
+.output {
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 2rem 0;
+}
+
+.output .image {
+	height: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.output .text {
+	height: 70%;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.output .text p + p {
+	margin-top: 1rem;
+}
+
+.output .description {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+.output .temperature {
+	font-size: 1.4rem;
+}
